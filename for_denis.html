@@ -7,65 +7,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./classes.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/css/uikit.min.css" />
+
+
 </head>
 <body>
     <h1>Создала гит репозиторий</h1>
-   <form name="Лавандовая форма">
-        <p>
-            <label for="" style="
-            color: rgb(12, 12, 12);">
-                Введите что-нибудь 1:
-            </label>
-            <input 
-                class="input"
-                type="text" 
-                size="25"
-            >
-        </p>
-    <p>
-            <label style="
-            color: rgb(12, 12, 12);">
-                Введите что-нибудь 2:
-            </label>
-            <input 
-            class="input"
-            type="text" 
-            size="25">
-       </p>
-    <p> 
-            <label style="
-            color: rgb(12, 12, 12);">
-            Введите что-нибудь 3 с циферками:
-            </label>
-            <input 
-            class="input"
-            type="number" 
-            size="25">
-       </p>
-       <p>Здесь нужно что-то выбарть:</b><br></p>
-<div> <input 
-    type="radio" 
-    id="radioButton1"
-    name="radio" 
-    value="GET">
-        <label for="radioButton1">GET</label>
-    <input 
-    type="radio" 
-    id="radioButton2"
-    name="radio"
-    value="POST">
-        <label for="radioButton2">POST</label>
-</div>
-<div>
-    <button 
-    type="reset"
-    >Очистить</button>
-</div>
-<div>
-    <button 
-    type="submit">Отправить</button>
-</div>
-   </form>
-<div>Тут какой-то текст</div>
+    <ul class="uk-subnav uk-subnav-pill" uk-switcher>
+        <li><a href="#">Лавандовая форма</a></li>
+        <li><a href="#">New Content</a></li>
+    </ul>
+    <ul class="uk-switcher uk-margin">
+        <li>
+            
+
+
+           <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-usage">Open</button>
+
+            <div id="offcanvas-usage" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar uk-background-primary">
+
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                    <form name="Лавандовая форма">
+                        <p>
+                            <label for="" style="
+                            color: rgb(12, 12, 12);">
+                                Введите что-нибудь 1:
+                            </label>
+                            <input 
+                                class="input"
+                                type="text" 
+                                size="25"
+                            >
+                        </p>
+                        <p>
+                            <label style="
+                            color: rgb(12, 12, 12);">
+                                Введите что-нибудь 2:
+                            </label>
+                            <input 
+                            class="input"
+                            type="text" 
+                            size="25">
+                       </p>
+                        <p> 
+                            <label style="
+                            color: rgb(12, 12, 12);">
+                            Введите что-нибудь 3 с циферками:
+                            </label>
+                            <input 
+                            class="input"
+                            type="number" 
+                            size="25">
+                       </p>
+                       <p>Здесь нужно что-то выбарть:</b><br></p>
+                        <div> <input 
+                            type="radio" 
+                            id="radioButton1"
+                            name="radio" 
+                            value="GET">
+                                <label for="radioButton1">GET</label>
+                            <input 
+                            type="radio" 
+                            id="radioButton2"
+                            name="radio"
+                            value="POST">
+                                <label for="radioButton2">POST</label>
+                        </div>
+                        <div>
+                            <button 
+                            type="reset"
+                            >Очистить</button>
+                        </div>
+                        <div>
+                            <button 
+                            type="submit">Отправить</button>
+                        </div>
+                   </form>
+
+                   <div>Тут какой-то текст</div>
+
+                </div>
+            </div>
+
+        </li>
+        <li>Что то новое</li>
+    </ul>
+   
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/js/uikit-icons.min.js"></script>
 </body>
 </html>

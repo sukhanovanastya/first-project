@@ -16,12 +16,20 @@ html, body{
 
 
 body { 
+     
+}
+
+.wrapper {
     background-image: url('../assets/image/cat.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
-} 
+    height: 100%;
+}
+
+.wrapper.planets {
+    background-image: url('../assets/image/planet.jpg');
+}
 .header {
     background-color: rgb(34, 34, 62, 0.6);
     height: 80px;
@@ -37,20 +45,36 @@ body {
     display: flex;
     gap: 40px;
     color: white;
-    font-family: url ('../assets/fonts/fonts/mr_kindlyjasmineg.woff2');
 }
 
 .menu li{
-    color: white;
     font-size: 35px;
+    padding: 13px;
+    transition: all 0.3s linear;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.menu li a:hover {
+color:#c818c1 ;
+
+}
+.menu li:hover {
+    background: #8e8ac15c;
 }
 
 .text {
     padding: 0;
     margin: 0;
     position: absolute;
-    top: 160px;
-    left: 930px;
+    top: 31%;
+    right: 2%;
     color: white;
-    font-size: 26px;
+    font-size: 39px;
+    
 }
+
